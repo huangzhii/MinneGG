@@ -4,7 +4,7 @@ close all; clear all; clc;
 %To detect Face
 FDetect = vision.CascadeObjectDetector;
 %Read the input image
-I = imread('lenna.jpeg');
+I = imread('face3.jpg');
 hat = imread('greenhat.png');
 %Returns Bounding Box values based on number of objects
 BB = step(FDetect,I);
